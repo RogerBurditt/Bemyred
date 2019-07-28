@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="left-down" width="10" height="5" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+ <properties>
+  <property name="id" value="0004"/>
+ </properties>
+ <tileset firstgid="1" source="tilesets/floor_set.tsx"/>
+ <layer id="1" name="Floor" width="10" height="5">
+  <properties>
+   <property name="firstgid" type="int" value="1"/>
+   <property name="tileset" value="base_dev/floor_set"/>
+  </properties>
+  <data encoding="csv">
+5,5,5,5,5,5,5,5,5,7,
+7,5,5,5,5,5,5,5,5,7,
+7,5,5,5,5,5,5,5,5,7,
+7,5,5,5,5,5,5,5,5,7,
+7,5,5,5,5,5,5,5,5,5
+</data>
+ </layer>
+ <objectgroup id="2" name="Actors"/>
+ <objectgroup id="3" name="Walls"/>
+ <objectgroup id="4" name="Portals"/>
+</map>

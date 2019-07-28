@@ -1,0 +1,79 @@
+{
+  "jsonID": 0,
+
+  "Ghost" : {
+    "actorID" : 0,
+    "Sprite" : {
+      "sheetID" : 0,
+      "sWidth"  : 32,
+      "sHeight" : 32,
+      "width"   : 32,
+      "height"  : 32,
+
+      "Animations" : {
+        "Default"  : [199, 198],
+
+        "IDLE_DOWN"  : [199, 198],
+        "IDLE_UP"    : [247, 246],
+        "IDLE_LEFT"  : [215, 214],
+        "IDLE_RIGHT" : [231, 230],
+
+        "MOVE_DOWN"  : [199, 198],
+        "MOVE_UP"    : [247, 246],
+        "MOVE_LEFT"  : [215, 214],
+        "MOVE_RIGHT" : [231, 230]
+        }
+      },
+
+      "Collision" : {
+        "xOffset" : 0,
+        "yOffset" : 8,
+        "width"   : 20,
+        "height"  : 16
+      },
+      "Physics" : {
+        "acceleration" : 1,
+        "deceleration" : 0.5,
+        "maxSpeed"     : 3,
+        "pushAmount"   : 0
+      }
+  },
+
+  "Slime" : {
+    "actorID" : 1,
+    "Sprite" : {
+      "sheetID" : 0,
+      "sWidth"  : 32,
+      "sHeight" : 32,
+      "width"   : 32,
+      "height"  : 32,
+
+      "Animations" : {
+        "Default"  : [193, 192],
+
+        "IDLE_DOWN"  : [193, 192],
+        "IDLE_UP"    : [241, 240],
+        "IDLE_LEFT"  : [209, 208],
+        "IDLE_RIGHT" : [225, 224],
+
+        "MOVE_DOWN"  : [193, 192],
+        "MOVE_UP"    : [241, 240],
+        "MOVE_LEFT"  : [209, 208],
+        "MOVE_RIGHT" : [225, 224]
+      }
+    },
+
+    "Collision" : {
+      "xOffset" : 0,
+      "yOffset" : 8,
+      "width"   : 20,
+      "height"  : 16
+    },
+    "Physics" : {
+      "acceleration" : 1,
+      "deceleration" : 0.5,
+      "maxSpeed"     : 3,
+      "pushAmount"   : 3
+    }
+  }
+}

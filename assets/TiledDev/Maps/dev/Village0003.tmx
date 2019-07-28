@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="10" height="5" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="10">
+ <properties>
+  <property name="id" value="0003"/>
+ </properties>
+ <tileset firstgid="1" source="tilesets/floor_set.tsx"/>
+ <layer id="1" name="Floor" width="10" height="5">
+  <properties>
+   <property name="firstgid" type="int" value="1"/>
+   <property name="tileset" value="base_dev/floor_set"/>
+  </properties>
+  <data encoding="csv">
+7,7,7,7,20,20,7,7,7,7,
+7,7,7,7,7,7,7,7,7,7,
+7,7,7,7,7,7,7,7,7,7,
+7,7,7,7,7,7,7,7,7,7,
+7,7,7,7,7,7,7,7,7,7
+</data>
+ </layer>
+ <objectgroup id="5" name="Sectors"/>
+ <objectgroup id="2" name="Actors">
+  <object id="1" name="npc" type="actor_spawn" x="160" y="128">
+   <properties>
+    <property name="onInteract" value="loadScript(`Name: Teleportation Test Map - Garden - S`, `Map ID: 0003`)"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Portals">
+  <object id="3" name="A" type="portal" x="128" y="0" width="64" height="32">
+   <properties>
+    <property name="to" value="0000_C"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Walls">
+  <object id="6" type="wall" x="-32" y="-32" width="384" height="32"/>
+  <object id="7" type="wall" x="-32" y="160" width="384" height="32"/>
+  <object id="8" type="wall" x="-32" y="0" width="32" height="160"/>
+  <object id="9" type="wall" x="320" y="0" width="32" height="160"/>
+ </objectgroup>
+</map>

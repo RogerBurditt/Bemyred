@@ -1,0 +1,47 @@
+body{
+  background-color: #3f334d;
+}
+#World{
+  background-color: #4a5899;
+  float:left;
+  width:1000px;
+  height:600px;
+  text-align: left;
+  outline: solid 4px;
+  outline-color: #adb2d3;
+  margin-left: 5px;
+  overflow: auto;
+}
+#Physics{
+  background-color: #8caa83;
+  float: right;
+  width:200px;
+  height:100px;
+  text-align: left;
+  outline: solid 4px;
+  outline-color: #adb2d3;
+  margin-left: 5px;
+  overflow: auto;
+}
+#Debug{
+  background-color: #000000;
+  float: right;
+  width:200px;
+  height:450px;
+  text-align: left;
+  outline: solid 4px;
+  outline-color: #adb2d3;
+  margin-left: 5px;
+  margin-top: 50px;
+  overflow: auto;
+}
+
+#uiContainer {
+  position: relative;
+}
+#uiContainer canvas, #ui {
+  position: absolute;
+}
+canvas {
+  border: 1px solid black;
+}

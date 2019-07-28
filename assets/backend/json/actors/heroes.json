@@ -1,0 +1,95 @@
+{
+  "Ghost" : {
+    "actorID" : 0,
+    "Sprite" : {
+      "src" : "base_dev/ACTORID-0",
+      "sWidth"  : 32,
+      "sHeight" : 32,
+      "width"   : 32,
+      "height"  : 32,
+
+      "Animations" : {
+
+        "Default"  : {
+          "frames" : [199, 198],
+          "speed"  : 8,
+          "loop"   : -1,
+          "to"   : "*",
+          "from" : "*"
+        },
+
+        "IDLE_DOWN"  : {
+          "frames" : [199, 198],
+          "speed"  : 8,
+          "loop"   : -1,
+          "to"   : "*",
+          "from" : "*"
+        },
+        "IDLE_UP"  : {
+          "frames" : [247, 246],
+          "speed"  : 8,
+          "loop"   : -1,
+          "to"   : "*",
+          "from" : "*"
+        },
+        "IDLE_LEFT"  : {
+          "frames" : [215, 214],
+          "speed"  : 8,
+          "loop"   : -1,
+          "to"   : "*",
+          "from" : "*"
+        },
+        "IDLE_RIGHT"  : {
+          "frames" : [231, 230],
+          "speed"  : 8,
+          "loop"   : -1,
+          "to"   : "*",
+          "from" : "*"
+        },
+
+        "MOVE_DOWN"  : {
+          "frames" : [199, 198],
+          "speed"  : 8,
+          "loop"   : -1,
+          "to"   : "*",
+          "from" : "*"
+        },
+        "MOVE_UP"  : {
+          "frames" : [247, 246],
+          "speed"  : 8,
+          "loop"   : -1,
+          "to"   : "*",
+          "from" : "*"
+        },
+        "MOVE_LEFT"  : {
+          "frames" : [215, 214],
+          "speed"  : 8,
+          "loop"   : -1,
+          "to"   : "*",
+          "from" : "*"
+        },
+        "MOVE_RIGHT"  : {
+          "frames" : [231, 230],
+          "speed"  : 8,
+          "loop"   : -1,
+          "to"   : "*",
+          "from" : "*"
+        }
+      }
+      },
+
+      "Collision" : {
+        "xOffset" : 0,
+        "yOffset" : 8,
+        "width"   : 20,
+        "height"  : 16
+      },
+
+      "Physics" : {
+        "acceleration" : 1,
+        "deceleration" : 0.5,
+        "maxSpeed"     : 3,
+        "pushAmount"   : 0
+      }
+  }
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="25">
+ <properties>
+  <property name="id" value="0000"/>
+ </properties>
+ <tileset firstgid="1" source="tilesets/floor_set.tsx"/>
+ <layer id="1" name="Floor" width="20" height="20">
+  <properties>
+   <property name="firstgid" type="int" value="1"/>
+   <property name="tileset" value="base_dev/floor_set"/>
+  </properties>
+  <data encoding="csv">
+5,5,5,5,5,5,5,5,16,20,20,16,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,16,20,20,16,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,16,16,16,16,5,5,5,5,5,5,5,5,
+5,5,5,1,5,5,5,5,5,5,5,5,5,5,5,5,1,5,5,5,
+5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5,
+5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5,
+5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5,
+5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5,
+18,18,11,5,6,6,6,6,4,4,4,4,6,6,6,6,5,18,18,18,
+20,20,11,5,6,6,6,6,4,4,4,4,6,6,6,6,5,18,20,20,
+20,20,11,5,6,6,6,6,4,4,4,4,6,6,6,6,5,18,20,20,
+18,18,11,5,6,6,6,6,4,4,4,4,6,6,6,6,5,18,18,18,
+5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5,
+5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5,
+5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5,
+5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5,
+5,5,5,1,5,5,5,5,5,5,5,5,5,5,5,5,1,5,5,5,
+5,5,5,5,5,5,5,5,7,7,7,7,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,7,20,20,7,5,5,5,5,5,5,5,5,
+5,5,5,5,5,5,5,5,7,20,20,7,5,5,5,5,5,5,5,5
+</data>
+ </layer>
+ <objectgroup id="5" name="Sectors"/>
+ <objectgroup id="2" name="Actors">
+  <object id="1" name="Hero" type="actor_spawn" x="320" y="320">
+   <point/>
+  </object>
+  <object id="2" name="npc" type="actor_spawn" x="256" y="256">
+   <properties>
+    <property name="onInteract">loadScript(
+`Name: Teleportation Test Map`,
+`Map ID: 0000`
+)</property>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Portals">
+  <object id="7" name="E" type="portal" x="96" y="96" width="32" height="32">
+   <properties>
+    <property name="to" value="0000_F"/>
+   </properties>
+  </object>
+  <object id="8" name="F" type="portal" x="512" y="96" width="32" height="32">
+   <properties>
+    <property name="to" value="0000_H"/>
+   </properties>
+  </object>
+  <object id="9" name="H" type="portal" x="512" y="512" width="32" height="32">
+   <properties>
+    <property name="to" value="0000_G"/>
+   </properties>
+  </object>
+  <object id="10" name="G" type="portal" x="96" y="512" width="32" height="32">
+   <properties>
+    <property name="to" value="0000_E"/>
+   </properties>
+  </object>
+  <object id="11" name="B" type="portal" x="0" y="288" width="64" height="64">
+   <properties>
+    <property name="to" value="0002_A"/>
+   </properties>
+  </object>
+  <object id="12" name="D" type="portal" x="576" y="288" width="64" height="64">
+   <properties>
+    <property name="to" value="0002_B"/>
+   </properties>
+  </object>
+  <object id="13" name="C" type="portal" x="288" y="576" width="64" height="64">
+   <properties>
+    <property name="to" value="0003_A"/>
+   </properties>
+  </object>
+  <object id="23" name="A" type="portal" x="288" y="0" width="64" height="64">
+   <properties>
+    <property name="to" value="0001_A"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Walls">
+  <object id="17" type="wall" x="-32" y="-32" width="704" height="32"/>
+  <object id="18" type="wall" x="-32" y="640" width="704" height="32"/>
+  <object id="19" type="wall" x="640" y="0" width="32" height="640"/>
+  <object id="20" type="wall" x="-32" y="0" width="32" height="640"/>
+ </objectgroup>
+</map>
